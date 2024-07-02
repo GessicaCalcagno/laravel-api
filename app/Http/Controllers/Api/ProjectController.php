@@ -27,10 +27,10 @@ class ProjectController extends Controller
     }
 
 
-    public function show(string $project)
+    public function show(string $slug)
     {
         //invece di prendere la collection prende il primo quindi metto firt, -> get se inserisco all()
-        $project = Project::with(['user', 'type', 'technologies'])->where('slug', $project)->first();
+        $project = Project::with(['type', 'technologies'])->where('slug', $slug)->first();
         $data = [
             'results' => $project,
             'success' => true
