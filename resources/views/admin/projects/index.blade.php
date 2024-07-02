@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Progetti</h1>
         <div class="d-flex justify-content-end">
-            {{-- i bottoni solo dentro il form --}}
+            {{-- i bottoni solo dentro il form!! --}}
             <a class="btn btn-success m-3" href="{{ route('admin.projects.create') }}">Crea</a>
         </div>
         <table class="table">
